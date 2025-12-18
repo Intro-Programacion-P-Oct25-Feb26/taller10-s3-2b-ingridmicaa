@@ -16,28 +16,31 @@ public class Problema02 {
         int[][] edades = {
             {5, 12, 35, 40},
             {8, 15, 33, 38},
-            {6, 10, 30, 36}};
+            {6, 10, 30, 36}
+        };
+
         int menores = 0;
         int[] adultosF = new int[edades.length];
 
         for (int f = 0; f < edades.length; f++) {
             int adultos = 0;
-            for (int c = 0; f < edades[f].length; c++) {
-                if (edades[f][c] <= 18) {
+
+            for (int c = 0; c < edades[f].length; c++) {
+                if (edades[f][c] < 18) {
                     menores++;
-                    
-                }else{
+                } else {
                     adultos++;
                 }
-                adultosF[f]= adultos;
             }
-            System.out.printf("Total de menores de edad:%s\n ", menores);
-            
-            for (int i = 0; i < adultosF.length; i++) {
-                
-                System.out.println("Familia " + (i + 1) + ": " + adultosF[i] + 
-                        " adultos");
-            }
+
+            adultosF[f] = adultos;
+        }
+
+        System.out.printf("Total de menores de edad: %d\n", menores);
+
+        for (int i = 0; i < adultosF.length; i++) {
+            System.out.println("Familia " + (i + 1) + ": " + adultosF[i] + 
+                    " adultos");
         }
     }
 }
