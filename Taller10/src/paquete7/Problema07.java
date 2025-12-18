@@ -3,17 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package paquete6;
+package paquete7;
 
 /**
  *
- * @author reroes
+ * @author Usuario
  */
-public class Problema06 {
-    public static void main(String[] args) {
-        
-        
-        
-    }
-
+public class Problema07 {
+    
 }
