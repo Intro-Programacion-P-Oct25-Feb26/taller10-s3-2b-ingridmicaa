@@ -10,5 +10,9 @@ package paquete7;
  * @author Usuario
  */
 public class Problema07 {
-    
+     public static void main(String[] args) {
+         
+         
+         
+     }
 }

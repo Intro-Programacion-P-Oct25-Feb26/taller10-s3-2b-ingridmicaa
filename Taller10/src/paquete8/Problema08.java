@@ -5,10 +5,7 @@
  */
 package paquete8;
 
-/**
- *
- * @author Usuario
- */
+import java.util.Scanner;
 public class Problema08 {
     
 }
