@@ -15,7 +15,7 @@ public class Problema06 {
         
         Scanner entrada = new Scanner(System.in);
 
-        double[][] matrizOriginal = new double[5][6];
+        double[][] matriz = new double[5][6];
         double[][] matrizResultante = new double[5][6];
 
         System.out.print("Ingrese un número entero o real: ");
@@ -26,33 +26,33 @@ public class Problema06 {
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 6; j++) {
                 System.out.printf("Elemento [%d][%d]: ", i, j);
-                matrizOriginal[i][j] = entrada.nextDouble();
+                matriz[i][j] = entrada.nextDouble();
             }
         }
 
         
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 6; j++) {
-                matrizResultante[i][j] = matrizOriginal[i][j] * num;
+                matrizResultante[i][j] = matriz[i][j] * num;
             }
         }
 
       
-        System.out.println("\nMatriz Original:");
+        System.out.println("\nMatriz:");
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 6; j++) {
-                System.out.printf("%.2f\t", matrizOriginal[i][j]);
+                System.out.printf("%.2f\t", matriz[i][j]);
             }
             System.out.println();
         }
 
        
-        System.out.println("\nMatriz Resultante (multiplicada por " + num + "):");
+        System.out.println("\nMatriz Resultante (multiplicada por " + num + "):\n");
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 6; j++) {
-                System.out.printf("%.2f\t", matrizResultante[i][j]);
+                System.out.printf("%.2f\n\t", matrizResultante[i][j]);
             }
-            System.out.println();
+          
         }
 
         
