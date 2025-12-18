@@ -50,7 +50,7 @@ public class Problema06 {
         System.out.println("\nMatriz Resultante (multiplicada por " + num + "):\n");
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 6; j++) {
-                System.out.printf("%.2f\n\t", matrizResultante[i][j]);
+                System.out.printf("%.2f\t", matrizResultante[i][j]);
             }
           
         }
